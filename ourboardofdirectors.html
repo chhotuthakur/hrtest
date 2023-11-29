@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.hrrl.in/ourboardofdirectors by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Nov 2023 16:17:39 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortlink" href="node/6.html" />
+
+<link rel="canonical" href="ourboardofdirectors.html" />
+  
+<title>Our Board of Directors | HPCL Rajasthan Refinery Limited, India</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+
+ 
+  
+
+<link href="sites/all/themes/hrrl/css/hrrl_res.css" rel="stylesheet">
+<link href="sites/all/themes/hrrl/css/hrrl_style.css" rel="stylesheet" >
+<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="sites/all/themes/hrrl/js/jquery_007.js"></script> 
+<script src="sites/all/themes/hrrl/js/jquery-1.7.1.js"></script>
+<script src="sites/all/themes/hrrl/js/jquery.js"></script>
+<script src="maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" async=""></script>
+</head>
+
+<body>
+
+
+
+<script>
+$(document).ready(function(){
+	$("li[role='tab']").click(function(){
+		$("li[role='tab']:not(this)").attr("aria-selected","false");
+		//$("li[role='tab']").attr("tabindex","-1");
+		$(this).attr("aria-selected","true");
+		//$(this).attr("tabindex","0");
+		var tabpanid= $(this).attr("aria-controls");
+		var tabpan = $("#"+tabpanid);
+		$("div[role='tabpanel']:not(tabpan)").attr("aria-hidden","true");
+		$("div[role='tabpanel']:not(tabpan)").addClass("hidden");
+
+		tabpan.removeClass("hidden");
+		//tabpan.className = "panel";
+		tabpan.attr("aria-hidden","false");		
+		});
+		  
+		//This adds keyboard accessibility by adding the enter key to the basic click event.
+		$("li[role='tab']").keydown(function(ev) {
+			if (ev.which ==13) {
+				$(this).click();
+			}
+		}); 
+		 
+		//This adds keyboard function that pressing an arrow left or arrow right from the tabs toggel the tabs. 
+		$("li[role='tab']").keydown(function(ev) {
+		if ((ev.which ==39)||(ev.which ==37))  {
+			var selected= $(this).attr("aria-selected");
+			if  (selected =="true"){
+				$("li[aria-selected='false']").attr("aria-selected","true").focus() ;
+				$(this).attr("aria-selected","false");
+
+				var tabpanid= $("li[aria-selected='true']").attr("aria-controls");
+				var tabpan = $("#"+tabpanid);
+				$("div[role='tabpanel']:not(tabpan)").attr("aria-hidden","true");
+				$("div[role='tabpanel']:not(tabpan)").addClass("hidden");
+
+				tabpan.attr("aria-hidden","false");
+				tabpan.removeClass("hidden");
+				//tabpan.className = "panel";
+			}
+		}
+	});
+}); 
+</script>
+<script>
+	<!--//--><![CDATA[//><!--
+	// it is reqired for runnig two items at one time
+	$j = $.noConflict(true);
+	$j(function () {            
+
+		$j('#s2').cycle({ timeout: 2000 ,delay: -9000  });
+
+		$j('#s4').click(function (event) {
+			event.preventDefault();               
+			$j('#s2').cycle('pause');
+		});
+
+		$j('#B11').click(function (event) {
+			event.preventDefault();                
+			$j('#s2').cycle('resume');
+		});         
+
+		$j('#s2').cycle({
+			fx: 'fade',
+			speed: 'slow',
+			next: '#next2',
+			prev: '#prev2'
+		});
+  
+	});
+	//--><!]]>
+</script>
+
+
+
+<div id="skiptocontent">
+		<a href="#maincontent">Skip to main contents</a>
+	 
+</div>
+<div class="container-fluid panel1">
+	<div class="row">
+		<div class="col-md-2" style="position: relative; text-align: center;">
+						<a href="default.html"><img alt="HPCL Rajasthan Refinery Limited" src="sites/all/themes/hrrl/images/HRRL_logo.jpg" class="logoImg"></a>
+					</div>
+		<div class="col-md-9" style="text-align:center;">
+			<!--accessible menu coding-->
+			<script>// <![CDATA[
+			
+$(document).ready(function(){
+
+    var $nav = $('.navigation');
+    var $parents = $nav.find('li:has(> ul)');
+    var $childrens = $parents.find('ul');
+    var $parentLink = $parents.find('> a');
+
+    $parentLink.on('click keypress', function (e) {
+				//alert(12);
+				//return false;
+		if(e.keyCode == 13 && e.type=="keypress" || e.type=="click"){
+			e.preventDefault();
+			e.stopPropagation();
+			//close all the parents first
+			
+			var $this = $(this);
+			if($this.hasClass('notclicked')){
+				//alert(1);
+				if($this.parent('li').siblings().hasClass('expanded')){
+					//alert(45);
+					$this.parent('li').siblings().removeClass('expanded');
+					$this.parent('li').siblings().children('ul').removeClass('visible');
+					$this.parent('li').siblings().find('> a').attr('aria-expanded','false');
+				}
+				else{
+					//alert(99);
+				}
+			}
+			else if(!$this.hasClass('notclicked') && $this.parent('li').hasClass('expanded')){
+				//alert(88);
+			}
+			else{
+				//alert(2);
+				$('.parent').removeClass('expanded');
+				$('.childrens').removeClass('visible');
+				$this.parent('li').siblings().find('> a').attr('aria-expanded','false');
+				$this.parent('li').siblings().children('ul').children('li').find('> a').attr('aria-expanded','false');
+			}
+
+			var $thisChildren = $this.next('ul');
+			$thisChildren.children('li').children('a').addClass('notclicked');
+			//alert(3);
+			var $thisParent = $this.parent('li').toggleClass('expanded');
+			//alert(4);
+			
+			if($this.parent('li').is(".expanded")) 
+			{ 
+				$this.parent('li').find('> a').attr('aria-expanded','true');
+				
+			}
+			else{
+				$this.parent('li').find('> a').attr('aria-expanded','false');
+				$thisChildren.children('li').find('> a').attr('aria-expanded','false');
+				$thisChildren.children('li').removeClass('expanded');
+				$thisChildren.children('li').children('ul').removeClass('visible');
+			}
+			
+			$thisChildren.toggleClass("visible");
+		}		
+		
+    });
+
+    //this is for making the internal pages banner responsive
+    $(".field-name-field-contentimage .field-items .even img").addClass("full-width");
+    $(".field-name-field-contentimage .field-items .even img").removeAttr('width');
+    $(".field-name-field-contentimage .field-items .even img").removeAttr('height');
+    
+});
+			</script>
+			
+			<nav class="navigation" role="navigation">
+				<div id="zf--main-menu--skin" class="navbar navbar-default zf--encloser">
+					<button data-target=".navHeaderCollapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse navHeaderCollapse main_menu_nav_ul_div">
+						<ul class="nav navbar-nav navbar main_menu_nav_ul">
+														<li class="root_li parent"><a aria-expanded="false" aria-haspopup="true" aria-label="Our EXPERTISE(show/hide the submenu)" href="#">About Us</a>
+								<ul class="main_menu_nav_ul_innerul childrens">
+									<li class="notclicked"><a href="aboutus.html">Overview</a></li>
+									<li class="notclicked"><a href="ourpartners.html">Our Partners</a></li>
+									<li class="notclicked"><a href="ourboardofdirectors.html">Our Board of Directors</a></li>
+                                    <li class="root_li"><a aria-expanded="false" href="usefullinks.html">Useful Links</a></li>
+								</ul>
+							</li>
+							
+							<li class="root_li parent"><a aria-expanded="false" aria-haspopup="true" aria-label="RTI(show/hide the submenu)" href="#">RTI</a>
+								<ul class="main_menu_nav_ul_innerul childrens">
+									<li class="notclicked"><a href="sites/all/themes/hrrl/documents/pdf/EC%20RRP_13092017.pdf" title="PDF file that opens in a new window" target="_blank">EC Letter</a></li>
+									<li class="notclicked"><a href="ec_compliance_report.html">EC Compliance Report</a></li>
+									<!--<li class="notclicked"><a href="/hrrl/sites/all/themes/hrrl/documents/pdf/Compliance.pdf" title="PDF file that opens in a new window" target="_blank">EC Compliance Report</a></li>-->
+									<li class="notclicked"><a href="http://rti.gov.in/" title="External website that opens in a new window" target="_blank">RTI Website</a></li>
+									<li class="notclicked"><a href="sites/all/themes/hrrl/documents/excel/Summary%20of%20HRRL%20POs%20above%205%20crores.xlsx" title="Excel file that opens in a new window" target="_blank">PO Summary above 5 Cr</a></li>
+								</ul>
+							</li>
+							<li class="root_li parent"><a aria-expanded="false" aria-haspopup="true" aria-label="Tender and Contract(show/hide the submenu)" href="#">Tender & Contract</a>
+								<ul class="main_menu_nav_ul_innerul childrens">
+									<li class="notclicked"><a href="tender_and_contract.html">Tender and Contract</a></li>
+									<li class="notclicked"><a href="annual_procurement.html">Annual Procurement</a></li>
+									<li class="notclicked"><a href="po_summary.html">PO Summary</a></li>
+								</ul>
+							</li>
+							
+											<!-- <li class="root_li"><a href="photogallery">Photo Gallery</a></li> -->
+							
+<!-- <li class="root_li"><a href="photogallery"></a></li>-->
+<li class="root_li parent"><a aria-expanded="false" aria-haspopup="true" aria-label="Gallery(show/hide the submenu)" href="#">Gallery</a>
+<ul class="main_menu_nav_ul_innerul childrens">
+<li class="notclicked"><a href="photogallery.html">Photo Gallery</a></li>
+<li class="notclicked"><a href="videogallery.html">Video Gallery</a></li>
+</ul>
+</li>	
+							
+							
+							<li class="root_li parent"><a aria-expanded="false" aria-haspopup="true" aria-label="Careers(show/hide the submenu)" href="#">Careers</a>
+	                            <ul class="main_menu_nav_ul_innerul childrens">
+                            		<li class="notclicked"><a href="current-openings.html">Our Current Openings</a></li>
+                            		<li class="notclicked"><a href="results-updates.html">Results / Important Updates</a></li>
+								<!--<li class="notclicked"><a href="shortlisting-criteria">E5/E6 - Shortlisting Criteria</a></li>-->
+                            		<li class="notclicked"><a href="downloads.html">Downloads</a></li>
+	                            </ul>
+                            </li>
+							<li class="root_li"><a href="contactus.html">Contact Us</a></li>
+													</ul>
+													
+													<img alt="HPCL Rajasthan Refinery Limited" src="sites/all/themes/hrrl/images/Logos.png" >
+					</div>  
+				</div>
+			</nav>
+		</div>	
+		<div class="col-md-1" style="text-align:center; padding-top:2rem;">
+		    <div class="row pull-right"></div>
+			<!--<div class="row pull-right"><p align="justify"><a href="mailto:hrrl@mail.hpcl.co.in" class="emailLink"><strong>hrrl@mail.hpcl.co.in</strong></a></p>
+			</div>-->
+			<div class="row pull-right">
+				<!--<h2 class="hidethis">Follow us on:</h2>
+				<ul class="soc">
+					<li><a href="mailto:hrrl@mail.hpcl.co.in" title="Mail at HPCL hrrl"><img src="/sites/all/themes/hrrl/images/email.png" alt="Mail at HPCL hrrl"></a></li>
+					<li><a href="https://www.facebook.com/hpcl74" target="_blank" title="HPCL hrrl on Facebook, External website that opens in a new window"><img src="/sites/all/themes/hrrl/images/facebook.png" alt="HPCL hrrl on Facebook"></a></li>
+                    <li><a href="https://twitter.com/HPCL" target="_blank"  title="HPCL hrrl on Twitter, External website that opens in a new window"><img src="/sites/all/themes/hrrl/images/twitter.png" alt="HPCL hrrl on Twitter"></a></li>
+				</ul>-->
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+    var $nav1 = $('.navigation_accord');
+    var $parents1 = $nav1.find('li:has(> ul)');
+    var $childrens1 = $parents1.find('ul');
+    var $parentLink1 = $parents1.find('> a');
+
+    //Add parent class to all parents
+    $parents1.addClass('parent1');
+    $childrens1.addClass('childrens1');
+	
+    $parentLink1.on('click keypress', function (e) {
+		if(e.keycode == 13 && e.type=="keypress" || e.type=="click"){
+			e.preventDefault();
+			//close all the parents first
+			
+			var $this = $(this);
+			if($this.hasClass('notclicked')){
+				//alert(1);
+				if($this.parent('li').siblings().hasClass('expanded')){
+					//alert(45);
+					$this.parent('li').siblings().removeClass('expanded');
+					$this.parent('li').siblings().children('ul').removeClass('visible');
+					$this.parent('li').siblings().find('> a').attr('aria-expanded','false');
+				}
+				else{
+					//alert(99);
+				}
+				
+			}
+			else if(!$this.hasClass('notclicked') && $this.parent('li').hasClass('expanded')){
+				//alert(88);
+			}
+			else{
+				//alert(2);
+				$('.parent1').removeClass('expanded');
+				$('.childrens1').removeClass('visible');
+				$this.parent('li').siblings().find('> a').attr('aria-expanded','false');
+				$this.parent('li').siblings().children('ul').children('li').find('> a').attr('aria-expanded','false');
+			}
+
+			var $thisChildren1 = $this.next('ul');
+			$thisChildren1.children('li').children('a').addClass('notclicked');
+			//alert(3);
+			var $thisParent1 = $this.parent('li').toggleClass('expanded');
+			//alert(4);
+			
+			if($this.parent('li').is(".expanded")) 
+			{ 
+				$this.parent('li').find('> a').attr('aria-expanded','true');
+			}
+			else{
+				$this.parent('li').find('> a').attr('aria-expanded','false');
+				$thisChildren1.children('li').find('> a').attr('aria-expanded','false');
+				$thisChildren1.children('li').removeClass('expanded');
+				$thisChildren1.children('li').children('ul').removeClass('visible');
+			}
+			
+			$thisChildren1.toggleClass('visible');
+		}
+    });
+ });
+</script>
+
+<div class="col3-layout">
+	<div>
+		  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-6" class="node node-page clearfix" about="/ourboardofdirectors" typeof="foaf:Document">
+
+  
+      <span property="dc:title" content="Our Board of Directors" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="container">
+<div class="row">
+<h1 class="col-md-offset-1"><span>Our Board of Directors</span></h1>
+<h2 class="col-md-offset-1">Non-Executive Directors nominated by Hindustan Petroleum Corporation Ltd.</h2>
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/PK_Joshi.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+<div class="col-md-8 no_padd">
+<h3><span>Mr. P.K. Joshi</span> <small>Chairman</small></h3>
+<p align="justify">Mr. Pushp Kumar Joshi is Chairman and Managing Director of the Corporation effective May 8, 2022. Prior to this, he was Director – Human Resources of the Corporation from August 01, 2012. In past, he also held key portfolios in Human Resources functions viz. Executive Director – HRD and Head – HR of Marketing Division.</p>
+<p align="justify">A Bachelor of Law and an alumnus of XLRI, Jamshedpur, Mr. Pushp Kumar Joshi joined HPCL in 1986. Since then he has held various key positions in Human Resources and Industrial Relations functions at HQO, Marketing and Refineries Divisions of HPCL.</p>
+<p align="justify">He has been responsible for the design and deployment of key HR policies and practices that are employee oriented and aim at building high performance culture.</p>
+<p align="justify">He spearheaded various HR practices with strong business focus in HPCL viz; <a href="http://www.hindustanpetroleum.com/ProjectAkshay">Project Akshay</a> – the leadership development programme, Productivity Improvement Initiatives, leveraged the IT Platform for Internal Customer care, various Technical &amp; Behavioral training programs, HR- Business Process Reengineering (BPR), Implementation of JDE (HR), Health Management System, HR Green Credit etc.</p>
+</div>
+</div>
+
+
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/S_Bharathan.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+
+<div class="col-md-8 no_padd">
+<h3><span>Mr. S. Bharathan</span> <small>Director (Refineries)</small></h3>
+<p align="justify">Mr. S. Bharathan is Director – Refineries of the Company effective October 01, 2022. Prior to this, he was an Executive Director – Refineries Coordination of the Company with Additional Charge of R&D.</p>
+<p align="justify">Mr. Bharathan has wide exposure to the Refinery operations of the Company and has worked in Operations and Technical Departments of Mumbai and Visakh Refinery for over 25 years. He has also worked in the Corporate Office on Margin Management & Refinery Project Process for over 4 years. Further, he is also leading HPCL’s Green R&D Centre in Bengaluru for the last 3 years. Under him, HPCL Green Research & Development Centre (HPGRDC) has reached filing of about 380 patents.</p>
+</div>
+</div>
+
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/Amit_Garg.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+
+<div class="col-md-8 no_padd">
+<h3><span>Mr. Amit Garg</span> <small>Director (Marketing)</small></h3>
+<p align="justify">Mr. Amit Garg has been appointed as Director (Marketing) of the Company effective December 27, 2022. Prior to joining HPCL as Director (Marketing), Mr. Amit Garg was Executive Director (Aviation) in Bharat Petroleum Corporation Limited (BPCL).</p>
+<p align="justify">Mr. Amit Garg is a Post Graduate in Electronics & Management.</p>
+<p align="justify">Mr. Amit Garg is a senior leader in Oil & Gas space having rich and varied experience of over 35 years across the entire value chain in the Industry including sourcing, storage, logistics and sales across various functions in BPCL. He also served as a full time Director with Indraprastha Gas Limited, the largest CGD in the country and as a Nominee Director with Maharashtra Natural Gas Limited, a Joint Venture of BPCL & GAIL (India) Limited.</p>
+</div>
+</div>
+
+
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/KS_Shetty.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+
+<div class="col-md-8 no_padd">
+<h3><span>Mr. K S Shetty</span> <small>Director (Human Resources)</small></h3>
+<p align="justify">Shri K S Shetty has assumed the charge of Director Human Resources of the Company effective May 01, 2023. Prior to this, Shri K S Shetty was an Executive Director – Human Resources with additional charge of Employee Relations Department.</p>
+<p align="justify">Shri K S Shetty is a Gold Medalist in Human Resource Management from Andhra University and also a distinguished alumnus of the Swedish Institute, Stockholm from where he completed his Diploma in Sustainable Development in 2012. He has also completed his Advanced Management Program from MDI, Gurgaon / ESCP Europe Business School, Paris. (2016). He is an SHRM, USA - Senior Certified Professional and is currently on the AIMA Core Committee on HR and also on the National Council of the Indian Society for Training and Development (ISTD). He is also on the Board of HPCL’s Wholly Owned Subsidiary Company (HPLNG), effective October 10, 2022.</p>
+<p align="justify">He has over 25 years of experience in HR in various capacities at HPCL. In his current role at HPCL, he is responsible for the entire gamut of HR/ER functions ranging from Talent Acquisition, Capability Building, Career and Succession Planning, Performance and Rewards Management, Discipline Management etc. He also has in-depth knowledge of various Statutory/ Regulatory requirements under various Labour Laws.</p>
+</div>
+</div>
+
+
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/Rajneesh_Narang.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+<div class="col-md-8 no_padd">
+<h3><span>Mr. Rajneesh Narang</span> <small>Director</small></h3>
+<p align="justify">Mr. Rajneesh Narang is the Executive Director – Corporate Finance of Hindustan Petroleum Corporation Ltd., a Maharatna Oil Company.  Prior to this, he has held various key portfolios including that of Executive Director – Finance (Marketing), Executive Assistant to Chairman &amp; Managing Director – HPCL among other assignments. He is on Board of several HPCL Joint Venture Companies.</p>
+<p align="justify">A member of the Institute of Chartered Accountants of India (ICAI) and a degree in Masters in Financial Management, Mr. Narang brings with him rich and varied professional exposure of more than 3 decades across various spectrum of Downstream Oil Company. He has held various key challenging assignments in HPCL in the field of Corporate Finance, Treasury, Risk Management, Margin Management, Marketing Finance, Budgeting , SBU Commercial, C&amp;MD’s Office and Refinery Project. </p>
+<p align="justify">Mr. Rajneesh Narang is known for his Commercial acumen, innovative ideas and people-centric leadership. In his various roles, he has been focussed on investment in Human capital for building successful teams and individuals and able to perform and deliver exceptional results through positive engagement and a shared vision. He has various academic distinctions to his credit and is a key technical speaker in In-house capability building seminars and workshops.</p>
+</div>
+</div>
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/KaplanaNaik.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+<div class="col-md-8 no_padd">
+<h3><span>Ms. Kalpana C. Naik</span> <small>Director</small></h3>
+<p align="justify">Ms. Kalpana C. Naik has been appointed on the Board of HPCL Rajasthan Refinery Limited effective April 24, 2023</p>
+<p align="justify">She is currently working as General Manager, Corporate Pricing,  at Hindustan Petroleum Corporation Limited (HPCL) and has worked in many Sections of Finance namely, Budget, MIS & Pricing, LPG – Commercial, Retail - Commercial  etc. at HPCL.</p>
+</div>
+</div>
+<!--<div class="row rowBlock"><div class="col-md-offset-1 col-md-2 no_padd" >
+<img src="./sites/all/themes/hrrl/images/bod7.jpg" alt="" class="imgBlock">
+</div>
+<div class="col-md-8 no_padd" >
+<h3><span>Mr. Sudarsan Sethi</span> <small>IAS</small></h3>
+<p align="justify">Mr. Sudarsan Sethi, IAS is the Additional Chief Secretary, Mines and Petroleum Department, Government of Rajasthan and was appointed as Director with effect from 7th January 2019.</p>
+<p align="justify">Mr. Sethi is an IAS Officer of 1985 Batch of Rajasthan Cadre, He is a Post Graduate in Political Science and has completed MBA from Birmingham University, UK.  He has served in Departments of Tribal Area Development, GAD, Cabinet, Rural Development and Panchayati Raj, Social Justice &amp; Empowerment, in various capacities as Secretary/Principal Secretary/Additional Chief Secretary to the Government of Rajasthan.</p>
+</div>
+</div>
+<p align="justify">-->
+
+
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/Akhil_Arora.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+<div class="col-md-8 no_padd">
+<h3><span>Mr. Akhil Arora</span><small>Director</small></h3>
+<p align="justify">Mr. Akhil Arora was appointed on the Board of the Company effective January 21, 2021 as Government of Rajasthan nominated Director.</p>
+<p align="justify">Mr. Arora holds a Bachelor's degree in Electronics & Communication Engineering, qualifying him as a highly knowledgeable and technically proficient professional.  He is an IAS officer of 1993 batch and holds the esteemed position of Additional Chief Secretary in the Finance, Excise & Taxation Department of Rajasthan.</p>
+<p align="justify">Throughout his distinguished career, Mr. Arora has held numerous key positions, showcasing his exceptional leadership and administrative skills. Notably, he served as the Principal Secretary to the Government in various departments, including Finance, Medical & Health, Social Justice & Empowerment, Planning, and Information Technology & Communication.</p>
+<p align="justify">His ability to take on additional charges further highlights his versatility and capability, as he served as the Principal Secretary to Government in the Information Technology & Communication Department and the Department of Information and Public Relation. He also held the role of Commissioner for Specially Abled individuals in Rajasthan.</p>
+<p align="justify">Mr. Arora's training experiences have contributed significantly to his professional growth. He completed in-service training on Public Private Partnership at the Administrative Staff College of India, Hyderabad, and mid-career training, including Phase-V at the Lal Bahadur Shastri National Academy of Administration in Mussoorie.</p>
+<p align="justify">His outstanding achievements include overseeing projects in various capacities, such as Managing Director of Rajasthan Rajya Mines & Minerals Limited, Jaipur Metro Rail Corporation Limited, and Rajasthan State Mines and Minerals Limited. Additionally, he has served as the Commissioner of Tribal Area Development and as a Collector & District Magistrate in multiple locations.</p>
+<p align="justify">Mr. Arora's exceptional track record in diverse sectors and his profound understanding of administrative processes make him an invaluable addition to our Board of Directors. We are confident that his strategic insights and visionary leadership will play a crucial role in guiding our organization towards greater success and achieving new milestones. We eagerly look forward to his valuable contributions and are honored to have him on board.</p>
+</div>
+</div>
+
+
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/Veenu_Gupta.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+<div class="col-md-8 no_padd">
+<h3><span>Ms. Veenu Gupta</span><small>Director</small></h3>
+<p align="justify">Ms. Veenu Gupta was appointed on the Board of the Company effective June 07, 2023 as Government of Rajasthan nominated Director. With an impressive service history spanning several decades, Smt. Gupta brings a wealth of experience and expertise to our organization. Born on 27th December 1963 in Muzzafarnagar, her passion for knowledge led her to achieve an array of qualifications, including an M.B.A., M.A. (Hons.) in English, and a B.A. (Hons.) in English Literature.</p>
+<p align="justify">An IAS officer of 1987 batch, Ms. Gupta is currently posted as the Additional Chief Secretary for Industries & Commerce, Micro, Small & Medium Enterprise (M.S.M.E.), State Enterprises & Delhi Mumbai Industrial Corridor, Mines & Petroleum Department, and O.S.D., BIDA, along with the role of Additional Chief Secretary for Investment & NRIs, BIP, Rajasthan, Jaipur, Ms. Gupta has displayed exceptional leadership and administrative abilities.</p>
+<p align="justify">Her extensive professional journey includes holding various crucial positions such as Chairman of the Rajasthan State Pollution Control Board, Additional Chief Secretary for Medical & Health and Family Welfare Department, Principal Secretary to Government for Industries, State Enterprises, and N.R.I.s Department, Commissioner of Rajasthan Council of Primary Education, and several other key roles in the government and education sectors.</p>
+<p align="justify">Ms. Veenu Gupta's commitment to continuous learning is evident from her diverse training experiences both domestically and abroad. She has participated in various prestigious programs, including consultancy training under STUNCTAD in Geneva and China, a comprehensive MBA program from Southern Cross University in Australia, and advanced courses on WTO from the Administrative Staff College of India, among others.</p>
+<p align="justify">With her deep understanding of governance, trade, and industries, Ms. Veenu Gupta is a valuable addition to our board. Her visionary approach and insightful contributions will undoubtedly play a pivotal role in steering our organization towards greater heights of success. We are confident that her presence on the board will enrich our decision-making processes and drive positive changes for the company and all its stakeholders.</p>
+</div>
+</div>
+
+<!--
+<div class="row rowBlock">
+<div class="col-md-offset-1 col-md-2 no_padd">
+<img src="sites/all/themes/hrrl/images/Subodh_Agarwal.jpg" width="130" height="130" alt="" class="imgBlock" />
+</div>
+<div class="col-md-8 no_padd">
+<h3><span>Dr. Subodh Agarwal</span><small>Director</small></h3>
+<p align="justify">Dr. Subodh Agarwal is an IAS Officer of 1988 batch, Rajasthan Cadre and presently posted as Additional Chief Secretary Mines and Petroleum Department in Government of Rajasthan. With a reputation for intelligence, integrity, passion of work and high quality output, Dr. Agarwal is handpicked for demanding assignments.  He has more than 30 years of experience in formulating public policy in the Central and State governments, managing public sector organisations, leading administrative districts and has held various key positions during his career.</p>
+<p align="justify">A Civil Engineer from IIT Delhi with Post Graduate Diploma in Systems &amp; Management from IIT Delhi, Masters Degree in Economics,  Masters Degree in Public Policy from Princeton University, Degree in Law (LLB) and Ph.D. in Economics, Dr. Agarwal has several research papers and articles published in newspapers and magazines of repute, to his credit.</p>
+<p align="justify">He was appointed as a Director with effect from 10th August 2020</p>
+</div>
+</div>
+
+-->
+
+
+
+<!--<div class="row rowBlock"><div class="col-md-offset-1 col-md-2 no_padd" >
+<img src="./sites/all/themes/hrrl/images/bod8.jpg" alt="" class="imgBlock">
+</div>
+<p align="justify">-->
+<!--<div class="col-md-8 no_padd" ><h3><span>Mr. Niranjan Arya</span> <small>Director</small></h3>
+<p align="justify">Mr. Niranjan Arya is an IAS Officer of 1989 Batch of Rajasthan Cadre, Currently he is serving as the Additional Chief Secretary, Finance, Excise &amp; Taxation Department, Government of Rajasthan. He is a post graduate in Economics. He has served as Collector &amp; District Magistrate of Jaisalmer, Bikaner, Nagaur, Ajmer &amp; Kota. He has also held the position of Divisional Commissioner of Bharatpur &amp; Jaipur. He has served in Departments of Finance, Commercial Taxes, Transport, CMO in various capacities as Secretary/ Commissioner/ Principal Secretary/ Additional Chief Secretary to Government of Rajasthan.</p>
+<p align="justify">He was appointed as Director with effect from 7th January 2019.</p>
+</div>
+</div>
+<p align="justify">-->
+<!--<div class="row rowBlock"><div class="col-md-offset-1 col-md-2 no_padd" >
+<img src="./sites/all/themes/hrrl/images/bod9.jpg" alt="" class="imgBlock">
+</div>
+<div class="col-md-8 no_padd" >
+<h3><span>Mr. Dinesh Kumar</span> <small>IAS</small></h3>
+<p align="justify">Mr. Dinesh Kumar, IAS is the Secretary to Government in the Mines and Petroleum Department, Rajasthan and was appointed as Director with effect from 22nd November 2019.</p>
+<p align="justify">Mr. Dinesh Kumar is an IAS Officer of 1996 Batch of Rajasthan Cadre, He is a Graduate in Civil Engineering. He has served as Collector &amp; District Magistrate of Sirohi, Alwar and Jhunjhunu districts. He has served in Departments of Public Health Engineering and Ground Water, Local Self Government Development, Chief Minister’s Office and Excise Department in various capacities in the Government of Rajasthan. He has also served as Joint Secretary in the Department of Agriculture, Cooperation &amp; Farmer’s Welfare, Government of India New Delhi.</p>
+</div>
+</div>
+<p align="justify">-->
+</div>
+</div>
+</div></div></div><div class="form-item form-type-item">
+  <label>Language </label>
+ English
+</div>
+  </div>
+<p align="justify"><a href="hi/ourboardofdirectors.html" title="Our Board of Directors" class="translation-link" xml:lang="hi"><img class="language-icon" typeof="foaf:Image" src="sites/all/modules/languageicons/flags/hi.png" width="16" height="12" alt="हिन्दी" title="हिन्दी" /> हिन्दी</a></p>
+<!-- <ul class="links inline"><li class="translation_hi first last"><a href="hi/ourboardofdirectors" title="Our Board of Directors" class="translation-link" xml:lang="hi"><img class="language-icon" typeof="foaf:Image" src="sites/all/modules/languageicons/flags/hi.png" width="16" height="12" alt="हिन्दी" title="हिन्दी" /> हिन्दी</a></li></ul> -->
+  
+</div>
+  </div>
+</div>
+  </div>
+		<div class="content"></div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="container-fluid">
+	<div class="col-md-12">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+						<ul>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="usefullinks.html">Useful Links</a></li>
+				<li><a href="photogallery.html">Photo Gallery</a></li>	
+<li><a href="videogallery.html">Video Gallery</a></li>				
+				<li><a href="contactus.html" class="last">Contact Us</a></li>
+			</ul>
+			<p align="justify">&copy; 2023, <strong><a href="https://www.hindustanpetroleum.com/" title="Hindustan Petroleum Corporation Limited">HPCL</a></strong>. All rights reserved.</p>
+											
+		</div>
+		<!--<div class="col-md-2">
+			<a href="http://www.hindustanpetroleum.com" title="Hindustan Petroleum Corporation Limited"><img src="http://hindustanpetroleum.com/sites/all/themes/hpcl_ret/images/hpcl_logo.gif" alt="Hindustan Petroleum Corporation Limited - Future full of Energy"></a>
+		</div>-->
+	</div>
+	</div>
+	</div>
+</div>
+</body>
+
+
+
+<!-- Mirrored from www.hrrl.in/ourboardofdirectors by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Nov 2023 16:17:46 GMT -->
+</html>
