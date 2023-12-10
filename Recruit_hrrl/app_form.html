@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Form</title>
+  <style>
+    label {
+      display: inline-block;
+      width: 200px; /* Adjust the width as needed */
+      margin-bottom: 8px;
+    }
+
+    input, select {
+      display: inline-block;
+    }
+
+    /* Table CSS */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd; /* Add a border to the entire table */
+    }
+
+    th, td {
+      border: 1px solid #ddd; /* Add borders to table cells */
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: red;
+      color: white;
+      text-align: center; /* Center text in the first row */
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    table: select, input {
+      width: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+
+    /* Set the width of each column */
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 30%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5) {
+      width: 7.5%;
+    }
+
+    th:nth-child(6),
+    td:nth-child(6) {
+      width: 40%;
+    }
+
+    /* Work experience  */
+    .work-experience-table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd; /* Add a border to the entire table */
+      margin-top: 20px; /* Adjust as needed to separate from other tables */
+    }
+
+    .work-experience-table th, .work-experience-table td {
+      border: 1px solid #ddd; /* Add borders to table cells */
+      padding: 8px;
+      text-align: left;
+    }
+
+    .work-experience-table th {
+      background-color: #ff0000;
+      text-align: center; /* Center text in the header row */
+      color: white;
+    }
+
+    .work-experience-table select, .work-experience-table input {
+      width: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+
+    /* Set the width of each column */
+    .work-experience-table th:nth-child(1),
+    .work-experience-table td:nth-child(1) {
+      width: 40%;
+    }
+
+    .work-experience-table th:nth-child(2),
+    .work-experience-table td:nth-child(2),
+    .work-experience-table th:nth-child(5),
+    .work-experience-table td:nth-child(5) {
+      width: 7.5%;
+    }
+
+    .work-experience-table th:nth-child(3),
+    .work-experience-table td:nth-child(3),
+    .work-experience-table th:nth-child(4),
+    .work-experience-table td:nth-child(4) {
+      width: 15%;
+    }
+
+    .work-experience-table th:nth-child(6),
+    .work-experience-table td:nth-child(6) {
+      width: 15%;
+    }
+  </style>
+</head>
+<body>
+
+  <form enctype="multipart/form-data">
+    <span><strong>Mailing-Address (Main Communication Address)</strong></span><br>
+    
+    <label for="address">Address*</label>
+    <input type="text" id="address" name="address" required><br>
+    
+    <label for="pinCode">Pin Code*</label>
+    <input type="text" id="pinCode" name="pinCode" required><br>
+    
+    <label for="cityDistrict">City, District*</label>
+    <input type="text" id="cityDistrict" name="cityDistrict" required><br>
+    
+    <label for="state">State*</label>
+    <input type="text" id="state" name="state" required><br>
+    
+    <label for="homeTownCity">Home Town/City*</label>
+    <input type="text" id="homeTownCity" name="homeTownCity" required><br>
+    
+    <label for="homeState">Home State*</label>
+    <select id="homeState" name="homeState" required>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Mizoram">Mizoram</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Tripura">Tripura</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Uttarakhand">Uttarakhand</option>
+      <option value="West Bengal">West Bengal</option>
+    </select><br>
+    
+    <label for="panNumber">PAN No.*</label>
+    <input type="text" id="panNumber" name="panNumber" required><br>
+    
+    <label for="aadhaarNumber">Aadhaar No*</label>
+    <input type="text" id="aadhaarNumber" name="aadhaarNumber" required><br>
+    
+    <label for="idProofType">Type of ID Proof*</label>
+    <select id="idProofType" name="idProofType" required>
+      <option value="voterId">Voter ID</option>
+      <option value="aadhaarId">Aadhaar ID</option>
+      <option value="panCard">Pan Card</option>
+    </select><br>
+    
+    <label for="idProof">ID proof*</label>
+    <input type="text" id="idProof" name="idProof" required><br><br><br><br>
+    
+    <label for="phoneNo"><strong><u>Phone No with STD</u></strong></label>
+    <input type="text" id="phoneNo" name="phoneNo"><br>
+    
+    <label for="mobileNo"><strong><u>Mobile No(10 digit)*</u></strong></label>
+    <input type="text" id="mobileNo" name="mobileNo" required><br>
+    
+    <label for="email"><strong><u>Email-ID*</u></strong></label>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="confirmEmail"><strong><u>Confirm Email-ID*</u></strong></label>
+    <input type="email" id="confirmEmail" name="confirmEmail" required><br>
+    
+    <label for="category"><strong><u>Category*</u></strong></label>
+    <select id="category" name="category" required>
+      <option value="General">General</option>
+      <option value="OBC">OBC</option>
+      <option value="SC/ST">SC/ST</option>
+    </select><br><br>
+
+    <input type="checkbox" id="exServicemen" name="exServicemen">
+    <span for="exServicemen">Ex-Servicemen (Army/Navy/Airforce)</span><br>
+
+    <input type="checkbox" id="domiciledJammuKashmir" name="domiciledJammuKashmir">
+    <span for="domiciledJammuKashmir">Candidates domiciled in Jammu and Kashmir between 01.10.1980 and 31.12.1989</span><br>
+
+    <input type="checkbox" id="orthopaedicOneLeg" name="orthopaedicOneLeg">
+    <span for="orthopaedicOneLeg">Orthopaedically Handicapped - One Leg</span><br>
+
+    <input type="checkbox" id="hearingHandicapped" name="hearingHandicapped">
+    <span for="hearingHandicapped">Hearing Handicapped</span><br>
+
+    <input type="checkbox" id="handicappedLeprosyCured" name="handicappedLeprosyCured">
+    <span for="handicappedLeprosyCured">Handicapped - Leprosy Cured</span><br>
+
+    <input type="checkbox" id="handicappedDwarfism" name="handicappedDwarfism">
+    <span for="handicappedDwarfism">Handicapped - Dwarfism</span><br>
+
+    <input type="checkbox" id="handicappedAcidAttackVictims" name="handicappedAcidAttackVictims">
+    <span for="handicappedAcidAttackVictims">Handicapped - Acid Attack Victims</span><br>
+
+    <input type="checkbox" id="handicappedMuscularDystrophy" name="handicappedMuscularDystrophy">
+    <span for="handicappedMuscularDystrophy">Handicapped - Muscular Dystrophy</span><br>
+
+    <input type="checkbox" id="handicappedLearningDisability" name="handicappedLearningDisability">
+    <span for="handicappedLearningDisability">Handicapped - Specific Learning Disability</span><br>
+
+    <input type="checkbox" id="handicapped" name="handicapped">
+    <span for="handicapped">Handicapped</span><br>
+
+    <input type="checkbox" id="mentalIllness" name="mentalIllness">
+    <span for="mentalIllness">Handicapped - Mental Illness</span><br>
+
+    <input type="checkbox" id="handicappedMultipleDisabilities" name="handicappedMultipleDisabilities">
+    <span for="handicappedMultipleDisabilities">Handicapped - Multiple Disabilities</span><br><br>
+
+
+    <label for="gender"><strong><u>Gender*</u></strong></label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label for="dob"><strong><u>Date of Birth*</u></strong></label>
+    <input type="date" id="dob" name="dob" required>(dd/mm/yyyy)
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label for="religion"><strong><u>Religion*</u></strong></label>
+    <select id="religion" name="religion" required>
+      <option value="hindu">Hindu</option>
+      <option value="muslim">Muslim</option>
+      <option value="christian">Christian</option>
+      <option value="sikh">Sikh</option>
+      <option value="jain">Jain</option>
+      <option value="buddhist">Buddhist</option>
+      <!-- Add more religions as needed -->
+    </select>    <br><br><br><br>
+
+    <table border="1">
+        <tr>
+          <th>Degree/Batch</th>
+          <th>Duration of Course (years)</th>
+          <th>% of Marks Obtained</th>
+          <th>Month and Year of Joining</th>
+          <th>Month & Year of Appearing for Last Exam</th>
+          <th>University/Institute</th>
+        </tr>
+        <!-- Row 1 -->
+        <tr>
+          <!-- Column 1 -->
+          <td><input type="text" name="degreeBatch1" placeholder="Enter Degree/Batch"></td>
+          <!-- Column 2 -->
+          <td><input type="text" name="duration1" placeholder="Enter Duration"></td>
+          <!-- Column 3 -->
+          <td>
+            <input type="text" name="marksObtained1" placeholder="Enter % of Marks">
+            <span style="color: #888;">(e.g., 69.99)</span>
+          </td>
+          <!-- Column 4 -->
+          <td>
+            <select name="joiningMonth1">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="joiningYear1">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 2015; $i <= 2023; $i++) {
+                  echo "<option value='" . $i . "'>" . $i . "</option>";
+                }
+              ?>
+            </select>
+          </td>
+          <!-- Column 5 -->
+          <td>
+            <select name="appearingMonth1">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="appearingYear1">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 2015; $i <= 2023; $i++) {
+                  echo "<option value='" . $i . "'>" . $i . "</option>";
+                }
+              ?>
+            </select>
+          </td>
+          <!-- Column 6 -->
+          <td>
+            <select name="university1">
+              <option value="select">Select University</option>
+              <option value="university1">University 1</option>
+              <option value="university2">University 2</option>
+              <!-- Add more universities as needed -->
+            </select>
+          </td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+          <!-- Column 1 -->
+          <td><input type="text" name="degreeBatch2" placeholder="Enter Degree/Batch"></td>
+          <!-- Column 2 -->
+          <td><input type="text" name="duration2" placeholder="Enter Duration"></td>
+          <!-- Column 3 -->
+          <td>
+            <input type="text" name="marksObtained2" placeholder="Enter % of Marks">
+            <span style="color: #888;">(e.g., 69.99)</span>
+          </td>
+          <!-- Column 4 -->
+          <td>
+            <select name="joiningMonth2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="joiningYear2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 2015; $i <= 2023; $i++) {
+                  echo "<option value='" . $i . "'>" . $i . "</option>";
+                }
+              ?>
+            </select>
+          </td>
+          <!-- Column 5 -->
+          <td>
+            <select name="appearingMonth2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="appearingYear2">
+              <option value="select">Select</option>
+                      <?php
+                        for ($i = 2015; $i <= 2023; $i++) {
+                          echo "<option value='" . $i . "'>" . $i . "</option>";
+                        }
+                      ?>
+                    </select>
+                  </td>
+          <!-- Column 6 -->
+          <td><input type="text" name="university2" placeholder="University/Institute Name"></td>
+          </tr>
+          <!-- Row 3 -->
+        <tr>
+          <!-- Column 1 -->
+          <td><input type="text" name="degreeBatch2" placeholder="Enter Degree/Batch"></td>
+          <!-- Column 2 -->
+          <td><input type="text" name="duration2" placeholder="Enter Duration"></td>
+          <!-- Column 3 -->
+          <td>
+            <input type="text" name="marksObtained2" placeholder="Enter % of Marks">
+            <span style="color: #888;">(e.g., 69.99)</span>
+          </td>
+          <!-- Column 4 -->
+          <td>
+            <select name="joiningMonth2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="joiningYear2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 2015; $i <= 2023; $i++) {
+                  echo "<option value='" . $i . "'>" . $i . "</option>";
+                }
+              ?>
+            </select>
+          </td>
+          <!-- Column 5 -->
+          <td>
+            <select name="appearingMonth2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="appearingYear2">
+              <option value="select">Select</option>
+                      <?php
+                        for ($i = 2015; $i <= 2023; $i++) {
+                          echo "<option value='" . $i . "'>" . $i . "</option>";
+                        }
+                      ?>
+                    </select>
+                  </td>
+          <!-- Column 6 -->
+          <td><input type="text" name="university2" placeholder="University/Institute Name"></td>
+          </tr>
+          <!-- Row 4 -->
+        <tr>
+          <!-- Column 1 -->
+          <td><input type="text" name="degreeBatch2" placeholder="Enter Degree/Batch"></td>
+          <!-- Column 2 -->
+          <td><input type="text" name="duration2" placeholder="Enter Duration"></td>
+          <!-- Column 3 -->
+          <td>
+            <input type="text" name="marksObtained2" placeholder="Enter % of Marks">
+            <span style="color: #888;">(e.g., 69.99)</span>
+          </td>
+          <!-- Column 4 -->
+          <td>
+            <select name="joiningMonth2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="joiningYear2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 2015; $i <= 2023; $i++) {
+                  echo "<option value='" . $i . "'>" . $i . "</option>";
+                }
+              ?>
+            </select>
+          </td>
+          <!-- Column 5 -->
+          <td>
+            <select name="appearingMonth2">
+              <option value="select">Select</option>
+              <?php
+                for ($i = 1; $i <= 12; $i++) {
+                  echo "<option value='" . sprintf('%02d', $i) . "'>" . sprintf('%02d', $i) . "</option>";
+                }
+              ?>
+            </select>
+            <select name="appearingYear2">
+              <option value="select">Select</option>
+                      <?php
+                        for ($i = 2015; $i <= 2023; $i++) {
+                          echo "<option value='" . $i . "'>" . $i . "</option>";
+                        }
+                      ?>
+                    </select>
+                  </td>
+          <!-- Column 6 -->
+          <td><input type="text" name="university2" placeholder="University/Institute Name"></td>
+          </tr>
+      </table>
+<br>
+    <!-- CGPA Input Field -->
+    <label for="cgpa"><b>CGPA (if applicable):</b></label>
+    <input type="text" name="cgpa">
+    <span>(Enter your CGPA if applicable)</span>
+    <br>
+
+
+<!-- Bank Account Details -->
+
+<br>
+<b><u>Bank Details:</u></b><br><br>
+<input style="inline" type="checkbox" name="termsAndConditions" id="termsAndConditions" checked disabled>
+<span style="color: red;" for="termsAndConditions">I declare that Bank account details given below are correct and HRRL will not be liable in case
+    wrong details are furnished by me</span>
+<br><br>
+
+<label for="bankAccountNo">Bank Account No.*:</label>
+<input type="text" name="bankAccountNo" required>
+<br>
+
+<label for="confirmBankAccountNo">Confirm Bank Account No.*:</label>
+<input type="text" name="confirmBankAccountNo" required>
+<br>
+
+<label for="ifsc">IFSC Code*:</label>
+<input type="text" name="ifsc" required>
+<br>
+
+<label for="bankName">Bank Name*:</label>
+<input type="text" name="bankName" required>
+<br>
+
+<label for="branchName">Branch Name*:</label>
+<input type="text" name="branchName" required>
+<br>
+
+<br><br><br>
+
+       <!-- Work Experience Table -->
+
+       <b>Work Experience(Starting With the latest).</b><span style="color: red;"> (Experience will be considered post Qualification Degree Date)</span>
+       <p>Incase of employment with PSU/Government NOC is mandatory, This NOC will have to be produced at the time of interview.</p>
+    <table class="work-experience-table">
+        <thead>
+          <tr>
+            <th colspan="2">Duration <br><p style="text-align: left;">From</p><p style="text-align: right;">To</p>  </th>
+            <th>Experience as/in</th>
+            <th>Name & address of employer</th>
+            <th>Profile of organisation & its nature of business</th>
+            <th>Position Held</th>
+            <th>Key Performance & key Job Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+            // Loop for 6 default rows
+            for ($row = 1; $row <= 6; $row++) {
+          ?>
+          <tr>
+            <!-- Column 1 -->
+            <td colspan="2">
+              <input type="date" name="fromDate[]" placeholder="From">
+              <input type="date" name="toDate[]" placeholder="To">
+            </td>
+            <!-- Column 2 -->
+            <td><input type="text" name="experience[]" placeholder="Experience as/in"></td>
+            <!-- Column 3 -->
+            <td><input type="text" name="employer[]" placeholder="Name & address of employer"></td>
+            <!-- Column 4 -->
+            <td><input type="text" name="profile[]" placeholder="Profile of organisation & its nature of business"></td>
+            <!-- Column 5 -->
+            <td><input type="text" name="position[]" placeholder="Position Held"></td>
+            <!-- Column 6 -->
+            <td><input type="text" name="performance[]" placeholder="Key Performance and key job role"></td>
+          </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+  
+      <!-- Add Row Button -->
+      <button type="button" id="addRowBtn">Add Row</button>
+<br><br>
+<br>
+      <b>Pl. upload correct resume, as uploaded documents can't be changed later</b><br><br>
+<!-- File Uploads -->
+<label for="resume">Upload Your Resume/Documents*:</label>
+<input type="file" name="resume" accept=".doc, .docx, .pdf, .zip" required><span>(Max File Size 1MB, Upload in doc/docx/pdf/zip format)</span>
+<br><br>
+      <b>Pl. upload correct photo, as photo can't be changed later</b><br><br>
+
+      <label for="photo">Upload Your Photo*:</label>
+    <input type="file" name="photo" accept=".doc, .docx, .pdf, .zip" required><span>(Max File Size 50KB, Upload in JPEG/JPG/GIF format)</span>
+    <br>
+
+    <hr><br>
+    <b>Declaration</b><br><br>
+    <input type="checkbox" name="termsAndConditions" id="termsAndConditions" required>
+    <span    for="termsAndConditions">I hereby declare that the particulars furnished above are complete and correct to the best of my knowledge & belief. I understand that if at any stage, 
+        it is found application is false or incorrect or I do not satisfy the eligibility criteria, my candidature/appointment is liable to be cancelled.</span>
+    <br>    <br>
+    <hr>
+
+        <center> 
+            <button>Confirm</button>
+            <button>Back</button>
+            <button>Clear</button>
+            <button>Close</button>
+        </center>
+
+   <br> <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById('addRowBtn').addEventListener('click', function() {
+      var tableBody = document.querySelector('.work-experience-table tbody');
+      var newRow = tableBody.insertRow(tableBody.rows.length);
+      var columns = ['fromDate', 'toDate', 'experience', 'employer', 'profile', 'position', 'performance'];
+
+      for (var i = 0; i < columns.length; i++) {
+        var cell = newRow.insertCell(i);
+        var input = document.createElement('input');
+        input.type = (columns[i].includes('Date')) ? 'date' : 'text';
+        input.name = columns[i] + '[]';
+        input.placeholder = columns[i].replace(/([A-Z])/g, ' $1').trim(); // Convert camelCase to Title Case
+        cell.appendChild(input);
+      }
+    });
+  </script>
+
+</body>
+</html>
